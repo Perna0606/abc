@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perna Exploration - Sci-Fi Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            ⚡ PERNA <span>EXPLORATION</span>
+        </div>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+            <button id="cart-btn" class="cart-btn">
+                🛒 Carrinho (<span id="cart-count">0</span>)
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="glow-text">Equipamentos de Exploração & Entretenimento Galáctico</h1>
+        <p>Trajes de alta tecnologia, naves de última geração e os melhores jogos sci-fi do universo.</p>
+    </section>
+
+    <main id="produtos">
+        <h2>Catálogo de Exploração</h2>
+        <div class="grid-produtos">
+            
+            <div class="card-produto" data-id="1" data-nome="Traje Espacial Exo-Skin v2" data-preco="4500">
+                <div class="badge">Traje</div>
+                <img src="https://i.pinimg.com/736x/9c/95/91/9c9591122f642db61554a8918b207994.jpg" alt="Traje Espacial Exo-Skin">
+                <h3>Traje Espacial Exo-Skin v2</h3>
+                <p>Proteção térmica extrema e pressurização automática para caminhadas em gravidade zero.</p>
+                <div class="preco">₮ 4.500 Créditos</div>
+                <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="card-produto" data-id="2" data-nome="Traje Stealth Quantum X" data-preco="6200">
+                <div class="badge">Traje</div>
+                <img src="https://i.pinimg.com/1200x/37/16/54/371654cf0299288a45d298c8481f3e76.jpg" alt="Traje Stealth Quantum">
+                <h3>Traje Stealth Quantum X</h3>
+                <p>Camuflagem óptica ativa, sistema de camuflagem térmica e propulsores integrados.</p>
+                <div class="preco">₮ 6.200 Créditos</div>
+                <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="card-produto" data-id="3" data-nome="Nave Exploradora Comet-X" data-preco="25000">
+                <div class="badge">Veículo</div>
+                <img src="https://i.pinimg.com/1200x/98/0c/b8/980cb8df8721bca67a5147b2b354d7c0.jpg" alt="Nave Espacial">
+                <h3>Nave Exploradora Comet-X</h3>
+                <p>Propulsão a dobra espacial, piloto automático com IA e capacidade para 4 tripulantes.</p>
+                <div class="preco">₮ 25.000 Créditos</div>
+                <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="card-produto" data-id="4" data-nome="Simulador VR: Interstellar Odyssey" data-preco="150">
+                <div class="badge">Game</div>
+                <img src="https://i.pinimg.com/736x/c7/ef/47/c7ef470758b26ed0c79aee239005ac2b.jpg" alt="Game Sci-Fi">
+                <h3>Simulador VR: Interstellar Odyssey</h3>
+                <p>Jogo de realidade neural imersiva com mapeamento total de 10.000 sistemas solares.</p>
+                <div class="preco">₮ 150 Créditos</div>
+                <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="card-produto" data-id="5" data-nome="Sniper Alienígena de Plasma" data-preco="8900">
+                <div class="badge">Sci-Fi</div>
+                <img src="https://i.pinimg.com/736x/6e/92/df/6e92dfa86ceceb72a0ae8a08c278fa61.jpg" alt="Sniper Alienígena">
+                <h3>Sniper Alienígena de Plasma</h3>
+                <p>Equipamento de alta precisão com mira holográfica e disparos de energia fotônica.</p>
+                <div class="preco">₮ 8.900 Créditos</div>
+                <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="card-produto" data-id="6" data-nome="Blaster Tático Pulse-P8" data-preco="3400">
+                <div class="badge">Sci-Fi</div>
+                <img src="https://i.pinimg.com/736x/b7/24/e7/b724e7bebe3f6d5b45c1423c3d429e3f.jpg" alt="Blaster Tático Pulse-P8">
+                <h3>Blaster Tático Pulse-P8</h3>
+                <p>Armamento leve de energia ionizada com recarga rápida por células de fusão.</p>
+                <div class="preco">₮ 3.400 Créditos</div>
+                <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Seu Carrinho Espacial</h2>
+            <ul id="cart-items" class="cart-items-list"></ul>
+            <div class="cart-summary">
+                <p>Total: <strong id="cart-total">₮ 0 Créditos</strong></p>
+                <button class="btn-checkout" onclick="alert('Pedido enviado para a frota espacial!')">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contato">
+        <p>Entre em contato conosco e fique por dentro das novidades galácticas!</p>
+        <a href="https://www.instagram.com/gabriellins5544" target="_blank" class="btn-instagram">Instagram @gabriellins5544</a>
+        <br><br>
+        <p>&copy; 2026 Perna Exploration. Todos os direitos reservados em toda a Galáxia.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
